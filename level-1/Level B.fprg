@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-10 02:18:26 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtTERBTU4wSTsyMDIzLTAzLTEwOzAxOjE5OjE2IFBNOzI4MDg="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtTERBTU4wSTsyMDIzLTAzLTEwOzAyOjE4OjI2IFBNOzEwOzI5NjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, max" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <if expression="A&gt;B">
+                <then>
+                    <if expression="A&gt;C">
+                        <then>
+                            <assign variable="max" expression="A"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="B&gt;C">
+                        <then>
+                            <assign variable="Max" expression="B"/>
+                        </then>
+                        <else>
+                            <assign variable="Max" expression="C"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Bilangan yang paling besar adalah&quot;&amp;Max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

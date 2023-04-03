@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Hafidz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-17 02:19:13 PM"/>
+        <attribute name="created" value="SGFmaWR6OzEyMjA4ODc0LVBQTEdYNDsyMDIzLTAzLTE3OzAxOjQwOjA3IFBNOzI3ODA="/>
+        <attribute name="edited" value="SGFmaWR6OzEyMjA4ODc0LVBQTEdYNDsyMDIzLTAzLTE3OzAyOjE5OjEzIFBNOzE7Mjg5Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="max, i" type="Integer" array="False" size=""/>
+            <assign variable="max" expression="0"/>
+            <for variable="i" start="0" end="100" direction="inc" step="1">
+                <if expression="i &lt;= 100">
+                    <then>
+                        <output expression="i" newline="True"/>
+                        <if expression="i &gt; max">
+                            <then>
+                                <assign variable="max" expression="i"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="max" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;nilai maksimum adalah:&quot;&amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

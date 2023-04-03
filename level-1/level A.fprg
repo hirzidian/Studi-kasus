@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 09:29:05 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtTERBTU4wSTsyMDIzLTAzLTEwOzA4OjMxOjI5IEFNOzI3OTg="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtTERBTU4wSTsyMDIzLTAzLTI0OzA5OjI5OjA1IEFNOzEwOzI5NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, cetak" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="a" newline="True"/>
+                    <output expression="cetak" newline="True"/>
+                </then>
+                <else>
+                    <output expression="b" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

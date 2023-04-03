@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PT.YUDHISTIRA GHALIA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-07 09:23:30 PM"/>
+        <attribute name="created" value="UFQuWVVESElTVElSQSBHSEFMSUE7UFBMRzEyMjA4OTAyLUNJOzIwMjMtMDMtMDc7MDk6MTM6MzQgUE07MzYxOQ=="/>
+        <attribute name="edited" value="UFQuWVVESElTVElSQSBHSEFMSUE7UFBMRzEyMjA4OTAyLUNJOzIwMjMtMDMtMDc7MDk6MjM6MzAgUE07MTszNzI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, max" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="d"/>
+            <if expression="a &gt; b">
+                <then>
+                    <if expression="a &gt; c">
+                        <then>
+                            <if expression="a &gt; d">
+                                <then>
+                                    <assign variable="max" expression="a"/>
+                                </then>
+                                <else>
+                                    <assign variable="max" expression="d"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="c &gt; d">
+                                <then>
+                                    <assign variable="max" expression="c"/>
+                                </then>
+                                <else>
+                                    <assign variable="max" expression="d"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b &gt; c">
+                        <then>
+                            <if expression="b &gt; d">
+                                <then>
+                                    <assign variable="max" expression="b"/>
+                                </then>
+                                <else>
+                                    <assign variable="max" expression="d"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="c &gt; d">
+                                <then>
+                                    <assign variable="max" expression="c"/>
+                                </then>
+                                <else>
+                                    <assign variable="max" expression="d"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;bilangan terbesar adalah &quot; &amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

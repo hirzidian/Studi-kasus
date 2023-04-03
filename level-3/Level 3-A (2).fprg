@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 10:10:40 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtTERBTU4wSTsyMDIzLTAzLTI0OzEwOjAyOjQxIEFNOzI3ODg="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtTERBTU4wSTsyMDIzLTAzLTI0OzEwOjEwOjQwIEFNOzI7Mjg5NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a&gt;b">
+                <then>
+                    <if expression="b&gt;c">
+                        <then>
+                            <output expression="b" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a&gt;c">
+                                <then>
+                                    <output expression="c" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="a" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="a&gt;c">
+                        <then>
+                            <output expression="a" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="b&gt;c">
+                                <then>
+                                    <output expression="c" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="b" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
